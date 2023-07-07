@@ -164,6 +164,35 @@ main .food .food_main {
   flex-basis: 97.55%;
 }
 
+/* 料理画像キャプション */
+
+/* ステーキのキャプション */
+
+.food .food1 .a a {
+  position: relative;
+}
+.food_1 .a p {
+  width: 15.78%;
+  position: absolute;
+  left: 13px;
+  bottom: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgba(46, 46, 46, 0.486);
+  line-height: 38px;
+  padding: 0px 18px 0px 18px;
+  letter-spacing: 0.08em;
+}
+.food_1 .a span {
+  padding-left: 40px;
+}
+.food_1 .a img:last-child {
+  width: 9%;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+
 /* ↓記事とランキングの横並び */
 main .container {
   width: 100%;
@@ -446,8 +475,17 @@ footer .icon {
     display: inline;
     font-size: 15px;
   }
-  .ranking article h1 span {
+
+  .visual_copy section p:nth-child(3) {
     display: block;
+  }
+
+  .ranking article h1 {
+    text-align: center;
+  }
+
+  .ranking article h1 span {
+    white-space: nowrap;
     padding-top: 10px;
   }
 }
