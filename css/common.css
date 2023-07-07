@@ -21,9 +21,11 @@ a {
 }
 /* コンテナの書式 */
 .container {
-  max-width: 1090px;
+  max-width: 1130px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* ↓ヘッダー１の書式 */
@@ -89,19 +91,20 @@ header h1 {
 }
 
 /* ↓メインビジュアルの書式 */
-.visual {
+a.visual {
   position: relative;
+  display: block;
 }
 
 /* ↓メインビジュアルコピーの書式 */
 .visual_copy {
-  max-width: 530px;
+  width: 31%;
   color: #000;
   background-color: #ffffff;
   text-align: left;
   position: absolute;
-  left: 288px;
-  top: 250px;
+  left: 17.18%;
+  top: 34%;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 18px;
@@ -112,7 +115,7 @@ header h1 {
   font-family: Poppins;
   font-weight: 600;
   font-size: 35px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .visual_copy section p {
@@ -161,9 +164,16 @@ main .food .food_main {
   flex-basis: 97.55%;
 }
 
+/* ↓記事とランキングの横並び */
+main .container {
+  width: 100%;
+  display: flex;
+  column-gap: 4.77%;
+}
+
 /* ↓メインディッシュの書式 */
 main .container .article .maindish {
-  width: 700px;
+  max-width: 715px;
   display: flex;
   align-items: center;
   padding: 0px 20px 28px 20px;
@@ -171,13 +181,13 @@ main .container .article .maindish {
 }
 
 .maindish .maindish_text {
-  width: 402px;
+  max-width: 402px;
   text-align: left;
 }
 
 .maindish .maindish_img {
-  width: 260px;
-  padding-left: 34px;
+  max-width: 260px;
+  padding-left: 4.75%;
 }
 
 .maindish .maindish_text h1 {
@@ -197,15 +207,9 @@ main .container .article .maindish {
   font-size: 16px;
 }
 
-/* ↓記事とランキングの横並び */
-main .container {
-  display: flex;
-  column-gap: 52px;
-}
-
 /* ↓サイドディッシュの書式 */
 main .container .article .sidedish {
-  width: 700px;
+  max-width: 715px;
   display: flex;
   align-items: center;
   padding: 30px 20px 28px 20px;
@@ -213,12 +217,12 @@ main .container .article .sidedish {
 }
 
 .sidedish .sidedish_text {
-  width: 402px;
+  max-width: 402px;
   text-align: left;
 }
 
 .sidedish .sidedish_img {
-  width: 260px;
+  max-width: 260px;
   padding-left: 34px;
 }
 
@@ -241,19 +245,19 @@ main .container .article .sidedish {
 
 /* ↓デザートの書式 */
 main .container .article .dessert {
-  width: 700px;
+  max-width: 715px;
   display: flex;
   align-items: center;
   padding: 30px 20px 28px 20px;
 }
 
 .dessert .dessert_text {
-  width: 402px;
+  max-width: 402px;
   text-align: left;
 }
 
 .dessert .dessert_img {
-  width: 260px;
+  max-width: 260px;
   padding-left: 34px;
 }
 
@@ -276,7 +280,7 @@ main .container .article .dessert {
 
 /* ランキングの書式 */
 main .container .ranking {
-  width: 400px;
+  max-width: 400px;
 }
 
 /* ランキング画像とテキストの横並び */
@@ -306,20 +310,20 @@ main .container .ranking {
 
 /* ランキング画像書式 */
 article section a .ranking_img {
-  width: 129px;
+  max-width: 129px;
   padding-right: 16px;
 }
 
 /* ランキング文章書式 */
 article section a .ranking_text {
-  width: 200px;
+  max-width: 200px;
   font-size: 16px;
   text-align: left;
 }
 
 /* ランキングカテゴリ書式 */
 section a .ranking_text p:last-child {
-  width: 140px;
+  max-width: 140px;
   font-size: 14px;
   text-align: center;
   padding: 3px 3px 3px 3px;
@@ -331,10 +335,11 @@ section a .ranking_text p:last-child {
 main .news h2.news {
   font-family: Poppins;
   font-size: 35px;
+  margin-top: 13px;
   margin-bottom: 16px;
 }
 
-/* ニュース本文全体 */
+/* ニュース全体 */
 main .news ul {
   max-width: 1080px;
   text-align: left;
@@ -371,11 +376,78 @@ footer {
 
 footer p:first-child {
   color: #ffffff;
-  padding: 20px 0px 16px 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 footer .icon {
-  display: flex;
-  column-gap: 9.5px;
-  justify-content: center;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+/* 1600px以下 */
+@media (max-width: 1600px) {
+  .visual_copy {
+    width: 38%;
+    position: absolute;
+    left: 15.18%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 14px;
+    padding-bottom: 25px;
+  }
+  .visual_copy section h1 {
+    font-size: 34px;
+    padding-bottom: 3px;
+  }
+}
+
+/* 1400px以下 */
+@media (max-width: 1400px) {
+  .visual_copy {
+    width: 40%;
+    position: absolute;
+    left: 10.18%;
+    top: 23%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 14px;
+    padding-bottom: 25px;
+  }
+  .visual_copy section h1 {
+    font-size: 34px;
+    padding-bottom: 3px;
+  }
+}
+
+/* 1200px以下 */
+@media (max-width: 1200px) {
+  a.visual {
+    position: unset;
+  }
+  /* ↓メインビジュアルコピーの書式 */
+  .visual_copy {
+    width: 100%;
+    color: #000;
+    background-color: #ffffff;
+    position: unset;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+
+  .visual_copy section h1 {
+    font-size: 30px;
+    padding-bottom: 3px;
+  }
+  .visual_copy section p {
+    display: inline;
+    font-size: 15px;
+  }
+  .ranking article h1 span {
+    display: block;
+    padding-top: 10px;
+  }
 }
