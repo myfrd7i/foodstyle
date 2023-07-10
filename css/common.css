@@ -66,13 +66,8 @@ header h1 {
   display: flex;
 }
 
-.header2 .container nav ul:first-child {
-  border-left: 1px solid #ffffff;
-}
-
 .header2 .container li {
   width: 92px;
-  border-right: 1px solid #ffffff;
 }
 
 .header2 .container li a {
