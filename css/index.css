@@ -42,6 +42,10 @@ main .food {
   margin-bottom: 51px;
 }
 
+.food .food_main img.tab {
+  display: none;
+}
+
 main ul li.food_1 {
   width: 100%;
   display: flex;
@@ -312,12 +316,12 @@ main .food .food_main {
 .food_main section h1 {
   font-family: Poppins;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 33px;
   padding-bottom: 4px;
   letter-spacing: 0.02em;
 }
 .food_main section h2 {
-  font-size: 19px;
+  font-size: 18px;
   padding-bottom: 9px;
 }
 .food_main section p {
@@ -605,6 +609,7 @@ main aside p {
   /* ↓料理写真のflex設定1200以下 */
   main .food {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 12px;
     padding-left: 12px;
     padding-right: 0px;
@@ -612,21 +617,17 @@ main aside p {
   }
 
   main ul li.food_1 {
-    width: 51.7%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 2.42%;
   }
 
   main ul li.food_2 {
-    width: 51.7%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 2.42%;
-  }
-
-  main ul li.food_main {
-    display: none;
   }
 
   main .food .food_1 div {
@@ -640,7 +641,25 @@ main aside p {
   }
 
   main .food .food_main {
-    flex-basis: 97.55%;
+    flex-basis: 100%;
+  }
+
+  .food .food_main img.pc {
+    display: none;
+  }
+  .food .food_main img.tab {
+    display: block;
+    padding-right: 1.19%;
+  }
+  .food .food_main {
+    position: relative;
+  }
+  .food .food_main section {
+    width: 28%;
+    right: 1.13%;
+    height: 100%;
+    position: absolute;
+    padding: 20px 27px 25px 27px;
   }
 }
 
@@ -671,5 +690,12 @@ main aside p {
   /* ビジュアルコピーの3行目のみディスプレイブロック（改行） */
   .visual_copy section p:nth-child(3) {
     display: block;
+  }
+  .food .food_main section {
+    width: 38%;
+    right: 11.8px;
+    height: 100%;
+    position: absolute;
+    padding: 20px 27px 25px 27px;
   }
 }
