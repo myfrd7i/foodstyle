@@ -337,21 +337,25 @@ main .container {
 
 /* ↓メインディッシュの書式 */
 main .container .article .maindish {
-  width: 100%;
-  display: flex;
-  align-items: center;
+  width: 89%;
   padding: 30px 20px 28px 20px;
   border-bottom: 1px solid #000;
 }
 
+.container .article .maindish a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .maindish .maindish_text {
-  max-width: 402px;
+  width: 60%;
   text-align: left;
 }
 
 .maindish .maindish_img {
-  max-width: 260px;
-  padding-left: 34px;
+  width: 253px;
+  padding-left: 4%;
 }
 
 .maindish .maindish_text h1 {
@@ -373,21 +377,25 @@ main .container .article .maindish {
 
 /* ↓サイドディッシュの書式 */
 main .container .article .sidedish {
-  width: 100%;
-  display: flex;
-  align-items: center;
+  width: 89%;
   padding: 30px 20px 28px 20px;
   border-bottom: 1px solid #000;
 }
 
+.container .article .sidedish a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .sidedish .sidedish_text {
-  max-width: 402px;
+  width: 60%;
   text-align: left;
 }
 
 .sidedish .sidedish_img {
-  max-width: 260px;
-  padding-left: 34px;
+  width: 253px;
+  padding-left: 4%;
 }
 
 .sidedish .sidedish_text h1 {
@@ -409,20 +417,25 @@ main .container .article .sidedish {
 
 /* ↓デザートの書式 */
 main .container .article .dessert {
-  width: 100%;
+  width: 89%;
+  padding: 30px 20px 28px 20px;
+  border-bottom: 1px solid #000;
+}
+
+.container .article .dessert a {
   display: flex;
   align-items: center;
-  padding: 30px 20px 28px 20px;
+  justify-content: space-between;
 }
 
 .dessert .dessert_text {
-  max-width: 402px;
+  width: 60%;
   text-align: left;
 }
 
 .dessert .dessert_img {
-  max-width: 260px;
-  padding-left: 34px;
+  width: 253px;
+  padding-left: 3%;
 }
 
 .dessert .dessert_text h1 {
@@ -444,14 +457,14 @@ main .container .article .dessert {
 
 /* ランキングの書式 */
 main .container .ranking {
-  max-width: 380px;
+  width: 100%;
 }
 
 /* ランキング画像とテキストの横並び */
 .ranking article section a {
   display: flex;
   margin-bottom: 7.2%;
-  width: 380px;
+  column-gap: 3%;
 }
 
 /* ランキングh1の書式 */
@@ -474,7 +487,7 @@ main .container .ranking {
 
 /* ランキング画像書式 */
 article section a .ranking_img {
-  width: 40.5%;
+  width: 139px;
   padding-left: 2.5%;
   text-align: left;
 }
