@@ -337,7 +337,7 @@ main .container {
 
 /* ↓メインディッシュの書式 */
 main .container .article .maindish {
-  width: 89%;
+  width: 100%;
   padding: 30px 20px 28px 20px;
   border-bottom: 1px solid #000;
 }
@@ -377,7 +377,7 @@ main .container .article .maindish {
 
 /* ↓サイドディッシュの書式 */
 main .container .article .sidedish {
-  width: 89%;
+  width: 100%;
   padding: 30px 20px 28px 20px;
   border-bottom: 1px solid #000;
 }
@@ -417,9 +417,10 @@ main .container .article .sidedish {
 
 /* ↓デザートの書式 */
 main .container .article .dessert {
-  width: 89%;
+  width: 100%;
   padding: 30px 20px 28px 20px;
   border-bottom: 1px solid #000;
+  margin-bottom: 50px;
 }
 
 .container .article .dessert a {
