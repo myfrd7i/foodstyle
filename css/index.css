@@ -338,7 +338,7 @@ main .container {
 /* ↓メインディッシュの書式 */
 main .container .article .maindish {
   width: 100%;
-  padding: 30px 20px 28px 20px;
+  padding: 0px 20px 28px 20px;
   border-bottom: 1px solid #000;
 }
 
@@ -464,7 +464,7 @@ main .container .ranking {
 /* ランキング画像とテキストの横並び */
 .ranking article section a {
   display: flex;
-  margin-bottom: 7.2%;
+  margin-bottom: 14%;
   column-gap: 3%;
 }
 
@@ -491,6 +491,11 @@ article section a .ranking_img {
   width: 139px;
   padding-left: 2.5%;
   text-align: left;
+}
+
+/* ランキングtab用画像非表示 */
+article section a .ranking_img .tab {
+  display: none;
 }
 
 /* ランキング文章書式 */
@@ -671,6 +676,7 @@ main aside p {
   .food .food_main {
     position: relative;
   }
+  /* ミネストローネコピー */
   .food .food_main section {
     width: 28%;
     right: 1.13%;
@@ -708,11 +714,64 @@ main aside p {
   .visual_copy section p:nth-child(3) {
     display: block;
   }
+  /* ミネストローネコピー */
   .food .food_main section {
     width: 38%;
-    right: 11.8px;
+    right: 1.13%;
     height: 100%;
     position: absolute;
     padding: 20px 27px 25px 27px;
+  }
+}
+
+/* 900以下 */
+@media (max-width: 900px) {
+  /* ランキングの書式 */
+  main .container .ranking {
+    width: 70%;
+  }
+  /* ランキング画像とテキストの横並び解除 */
+  .ranking article section a {
+    display: block;
+    margin-bottom: 19%;
+  }
+  /* ランキングpc用画像非表示 */
+  article section a .ranking_img .pc {
+    display: none;
+  }
+  /* ランキングtab用画像表示 */
+  article section a .ranking_img .tab {
+    display: block;
+  }
+  /* ランキング画像書式 */
+  article section a .ranking_img {
+    width: 100%;
+    padding-bottom: 14px;
+  }
+  /* ランキング文章書式 */
+  article section a .ranking_text {
+    width: 100%;
+  }
+  /* ランキングカテゴリ書式 */
+  section a .ranking_text p:last-child {
+    margin-top: 5px;
+  }
+  /* ミネストローネコピー */
+  .food .food_main section {
+    width: 42%;
+    right: 1.13%;
+  }
+}
+
+/* 800以下 */
+@media (max-width: 800px) {
+  /* ミネストローネコピー */
+  .food .food_main section {
+    width: 52%;
+    right: 1.13%;
+  }
+  /* 記事とランキングの横並び解除 */
+  main .container {
+    display: block;
   }
 }
