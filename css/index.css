@@ -517,6 +517,12 @@ section a .ranking_text p:last-child {
 }
 
 /* ニュース見出しの書式 */
+main .news {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ニュース見出しの書式 */
 main .news h2.news {
   font-family: Poppins;
   font-size: 35px;
@@ -728,7 +734,7 @@ main aside p {
 @media (max-width: 900px) {
   /* ランキングの書式 */
   main .container .ranking {
-    width: 70%;
+    width: 65%;
   }
   /* ランキング画像とテキストの横並び解除 */
   .ranking article section a {
@@ -763,8 +769,39 @@ main aside p {
   }
 }
 
-/* 800以下 */
-@media (max-width: 800px) {
+/* 767以下 */
+@media (max-width: 767px) {
+  /* ↓料理写真のflex解除 */
+  main .food {
+    display: block;
+  }
+  /* 記事とランキングの余白調整 */
+  main .container {
+    column-gap: 2%;
+  }
+  /* 料理写真1グループの書式 */
+  main ul li.food_1 {
+    width: 100%;
+  }
+  /* 料理写真2グループの書式 */
+  main ul li.food_2 {
+    width: 100%;
+  }
+  /* 料理写真メイングループの書式 */
+  main ul li.food_main {
+    width: 100%;
+  }
+
+  main .food .food_1 div {
+    flex-basis: 47.7%;
+    margin-bottom: 2.29%;
+  }
+
+  main .food .food_2 div {
+    flex-basis: 47.7%;
+    margin-bottom: 2.29%;
+  }
+
   /* ミネストローネコピー */
   .food .food_main section {
     width: 52%;
@@ -773,5 +810,20 @@ main aside p {
   /* 記事とランキングの横並び解除 */
   main .container {
     display: block;
+  }
+  /* ランキングの書式 */
+  main .container .ranking {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ランキング画像とテキストの横並び */
+  .ranking article section a {
+    display: flex;
+    margin-bottom: 5%;
+  }
+  /* ランキング画像書式 */
+  article section a .ranking_img {
+    width: 70%;
   }
 }

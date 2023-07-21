@@ -101,3 +101,10 @@ footer .icon {
   margin-right: auto;
   padding-bottom: 20px;
 }
+
+/* 1000px以下 */
+@media (max-width: 1000px) {
+  .header2 .container p:last-child {
+    display: none;
+  }
+}
