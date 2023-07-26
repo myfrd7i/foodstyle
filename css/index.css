@@ -5,6 +5,11 @@ a.visual {
   position: relative;
   display: block;
 }
+/* タブレット用画像非表示 */
+a.visual .tab {
+  position: relative;
+  display: none;
+}
 
 /* ↓メインビジュアルコピーの書式 */
 .visual_copy {
@@ -14,7 +19,7 @@ a.visual {
   text-align: left;
   position: absolute;
   left: 17.18%;
-  top: 34%;
+  top: 38%;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 18px;
@@ -46,43 +51,43 @@ main .food {
 .food .food_main img.tab {
   display: none;
 }
-
+/* 料理写真ブロック1の書式 */
 main ul li.food_1 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   column-gap: 2.42%;
 }
-
+/* 料理写真ブロック2の書式 */
 main ul li.food_2 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   column-gap: 2.42%;
 }
-
+/* 料理写真ブロック3の書式 */
 main ul li.food_main {
   width: 100%;
 }
-
+/* 料理写真ブロック1の中の書式 */
 main .food .food_1 div {
   flex-basis: 47.7%;
   margin-bottom: 2.29%;
 }
-
+/* 料理写真ブロック2の中の書式 */
 main .food .food_2 div {
   flex-basis: 47.7%;
   margin-bottom: 2.29%;
 }
-
+/* 料理写真ブロック3の中の書式 */
 main .food .food_main {
   flex-basis: 97.55%;
 }
-
+/* 料理写真ブロック1の画像100% */
 main .food .food_2 div img {
   width: 100%;
 }
-
+/* 料理写真ブロック2の画像100% */
 main .food .food_1 div img {
   width: 100%;
 }
@@ -780,6 +785,14 @@ main aside p {
 
 /* 767以下 */
 @media (max-width: 767px) {
+  /* PC用メインビジュアル非表示 */
+  a.visual .pc {
+    display: none;
+  }
+  /* タブレット用メインビジュアル表示 */
+  a.visual .tab {
+    display: block;
+  }
   /* ↓料理写真のflex解除 */
   main .food {
     display: block;
@@ -800,14 +813,10 @@ main aside p {
   main ul li.food_main {
     width: 100%;
   }
-  /* 料理写真ブロック非表示 */
-  main .food .food_1 div {
-    display: none;
-  }
   /* ミネストローネコピー */
   .food .food_main section {
     width: 52%;
-    right: 1.13%;
+    padding: 18px 20px 20px 20px;
   }
   /* 記事とランキングの横並び解除 */
   main .container {
