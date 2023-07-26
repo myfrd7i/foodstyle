@@ -42,6 +42,7 @@ main .food {
   margin-bottom: 51px;
 }
 
+/* タブレット用両料理写真非表示 */
 .food .food_main img.tab {
   display: none;
 }
@@ -76,6 +77,14 @@ main .food .food_2 div {
 
 main .food .food_main {
   flex-basis: 97.55%;
+}
+
+main .food .food_2 div img {
+  width: 100%;
+}
+
+main .food .food_1 div img {
+  width: 100%;
 }
 
 /* 料理画像キャプション */
@@ -791,17 +800,10 @@ main aside p {
   main ul li.food_main {
     width: 100%;
   }
-
+  /* 料理写真ブロック非表示 */
   main .food .food_1 div {
-    flex-basis: 47.7%;
-    margin-bottom: 2.29%;
+    display: none;
   }
-
-  main .food .food_2 div {
-    flex-basis: 47.7%;
-    margin-bottom: 2.29%;
-  }
-
   /* ミネストローネコピー */
   .food .food_main section {
     width: 52%;
