@@ -102,9 +102,94 @@ footer .icon {
   padding-bottom: 20px;
 }
 
+/*-------------------------------
+ハンバーガーアイコン（モバイル用）
+-------------------------------*/
+/* 幅:50px, 高さ:50px, ボーダー:なし, 背景色:任意, FlexBox, 横:中央, 縦:中央, 配置:absolute, 上:15px, 右:15px  */
+.hmenu {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(194, 211, 241);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  border-radius: 4px;
+}
+
+/* 幅:35px, 高さ:4px, 背景色:#fff, 角丸:4px, ブロック表示, 配置:absolute, 切り替え:0.5s */
+.hmenu span,
+.hmenu span::before,
+.hmenu span::after {
+  width: 32px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  transition: 0.5s;
+}
+
+/* 内容:"", 下:12px */
+.hmenu span::before {
+  content: "";
+  bottom: 12px;
+}
+
+/* 内容:"", 上:12px */
+.hmenu span::after {
+  content: "";
+  top: 12px;
+}
+
+/* 背景色:unset */
+.hmenu.close span {
+  background-color: unset;
+}
+
+/* 下:0, 回転:-45° */
+.hmenu.close span::before {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+/* 上:0, 回転:45° */
+.hmenu.close span::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
 /* 1000px以下 */
 @media (max-width: 1000px) {
   .header2 .container p:last-child {
     display: none;
+  }
+}
+
+/* Bパターン */
+@media (max-width: 600px) {
+  /* 幅:0, 高さ:100%-header高さpx, ボーダー:なし, ドロップシャドウ:-3px 0 6px rgba(0, 0, 0, 0.2), 配置:absolute, 上:header高さpx, 右:0, 切り替え:0.5s, オーバーフローX:隠す, 折り返さない */
+  .container nav li {
+    padding-left: 20px;
+    text-align: left;
+  }
+  .container nav {
+    width: 0;
+    height: calc(100% - 90px);
+    border: none;
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 90px;
+    right: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  /* 幅:200px */
+  .hmenu.close + nav {
+    width: 200px;
   }
 }
