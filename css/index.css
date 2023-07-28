@@ -47,8 +47,12 @@ main .food {
   margin-bottom: 51px;
 }
 
-/* タブレット用両料理写真非表示 */
+/* タブレット用料理写真非表示 */
 .food .food_main img.tab {
+  display: none;
+}
+/* スマホ用料理写真非表示 */
+.food .food_main img.sp {
   display: none;
 }
 /* 料理写真ブロック1の書式 */
@@ -433,7 +437,6 @@ main .container .article .sidedish {
 main .container .article .dessert {
   width: 100%;
   padding: 30px 20px 28px 20px;
-  border-bottom: 1px solid #000;
   margin-bottom: 50px;
 }
 
@@ -473,6 +476,7 @@ main .container .article .dessert {
 /* ランキングの書式 */
 main .container .ranking {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 /* ランキング画像とテキストの横並び */
@@ -553,7 +557,7 @@ main .news ul {
   padding: 33px 20px 15px 52px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 49px;
+  margin-bottom: 60px;
 }
 
 /* ニュース本文書式 */
@@ -562,6 +566,10 @@ main .news ul li {
 }
 
 /* About書式 */
+main aside {
+  width: 95%;
+}
+
 main aside h2 {
   width: 180px;
   margin-left: auto;
@@ -719,6 +727,7 @@ main aside p {
     padding-right: 35px;
     padding-top: 16px;
     padding-bottom: 14px;
+    background-color: #ffffff;
   }
   /* ビジュアルコピーh1のサイズ変更 */
   .visual_copy section h1 {
@@ -789,9 +798,20 @@ main aside p {
   a.visual .pc {
     display: none;
   }
-  /* タブレット用メインビジュアル表示 */
+  /* タブレット用画像非表示 */
   a.visual .tab {
+    position: relative;
     display: block;
+  }
+  /* タブレット用ミネストローネ写真非表示 */
+  .food .food_main img.tab {
+    display: none;
+  }
+  /* スマホ用ミネストローネ写真表示 */
+  .food .food_main img.sp {
+    display: block;
+    width: 100%;
+    padding-right: 2.19%;
   }
   /* ↓料理写真のflex解除 */
   main .food {
@@ -816,7 +836,8 @@ main aside p {
   /* ミネストローネコピー */
   .food .food_main section {
     width: 52%;
-    padding: 18px 20px 20px 20px;
+    height: 70%;
+    right: 2.13%;
   }
   /* 記事とランキングの横並び解除 */
   main .container {
@@ -836,5 +857,25 @@ main aside p {
   /* ランキング画像書式 */
   article section a .ranking_img {
     width: 70%;
+  }
+}
+
+/*575以下 */
+@media (max-width: 575px) {
+  /* タブレット用ミネストローネ写真非表示 */
+  .food .food_main img.tab {
+    display: none;
+  }
+  /* スマホ用ミネストローネ写真非表示 */
+  .food .food_main img.sp {
+    position: relative;
+    display: block;
+    padding-right: 2.19%;
+  }
+  /* ミネストローネコピー */
+  .food .food_main section {
+    width: 49%;
+    height: 100%;
+    right: 2.13%;
   }
 }
