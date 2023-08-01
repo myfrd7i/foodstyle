@@ -11,7 +11,7 @@ $("body").click(function () {
   $(".hmenu").removeClass("close");
 });
 
-$(".hmenu2").click(function () {
+$(".hmenu3").click(function () {
   // 上下パターン
   //   $("nav").slideToggle(500);
   $(this).toggleClass("close");
@@ -21,5 +21,5 @@ $(".hmenu2").click(function () {
 
 // Bパターンの設定
 $("body").click(function () {
-  $(".hmenu2").removeClass("close");
+  $(".hmenu3").removeClass("close");
 });

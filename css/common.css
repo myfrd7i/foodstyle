@@ -84,6 +84,9 @@ header h1 {
   color: #9a9a9a;
   background-color: #ffffff;
 }
+.header3 {
+  display: none;
+}
 
 /* footer書式 */
 footer {
@@ -163,24 +166,24 @@ footer .icon {
 /*-------------------------------
 ハンバーガーアイコン（header2）
 -------------------------------*/
-.hmenu2 {
+.hmenu3 {
   width: 50px;
   height: 50px;
   border: none;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(139, 139, 139, 0);
   display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
   z-index: 2;
-  top: 6px;
-  right: 15px;
+  top: 66px;
+  left: 13px;
   border-radius: 4px;
 }
 
-.hmenu2 span,
-.hmenu2 span::before,
-.hmenu2 span::after {
+.hmenu3 span,
+.hmenu3 span::before,
+.hmenu3 span::after {
   width: 32px;
   height: 4px;
   background-color: #ffffff;
@@ -191,27 +194,27 @@ footer .icon {
   transition: 0.5s;
 }
 
-.hmenu2 span::before {
+.hmenu3 span::before {
   content: "";
   bottom: 12px;
 }
 
-.hmenu2 span::after {
+.hmenu3 span::after {
   content: "";
   top: 12px;
 }
 
-.hmenu2.close span {
+.hmenu3.close span {
   background-color: unset;
 }
 
-.hmenu2.close span::before {
+.hmenu3.close span::before {
   bottom: 0;
   transform: rotate(-45deg);
 }
 
 /* 上:0, 回転:45° */
-.hmenu2.close span::after {
+.hmenu3.close span::after {
   top: 0;
   transform: rotate(45deg);
 }
@@ -223,15 +226,16 @@ footer .icon {
   }
 }
 
-/* スマホ縦設定 */
-@media (max-width: 575px) {
+/* ヘッダー1 HBメニュー*/
+@media (max-width: 700px) {
+  /* ↓ヘッダー１の書式 */
+  header h1 {
+    text-align: center;
+  }
+
   .hmenu {
     display: flex;
   }
-  /* Aパターン
-    nav {
-    display: none;
-  } */
   .header1 .nav1 ul {
     display: block;
     padding-top: 20px;
@@ -241,17 +245,14 @@ footer .icon {
   footer p.copyright span {
     display: none;
   }
-}
-/* Bパターン */
-@media (max-width: 575px) {
   .container .nav1 li {
     padding-left: 25px;
     text-align: left;
   }
+
   .container .nav1 {
     width: 0;
     height: calc(100% - 45%);
-    border: none;
     box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
     position: absolute;
     z-index: 1;
@@ -264,6 +265,72 @@ footer .icon {
   }
   /* 幅:200px */
   .hmenu.close + nav {
+    width: 200px;
+  }
+  .header2 .container p img:first-child {
+    display: none;
+  }
+  .header2 .container p img:last-child {
+    display: block;
+  }
+}
+
+/* ヘッダー2 HBメニュー*/
+@media (max-width: 575px) {
+  .hmenu3 {
+    display: flex;
+  }
+  .header2 {
+    background-color: #9a9a9a;
+    height: 60px;
+    width: 100%;
+  }
+  .header2 .container {
+    display: none;
+  }
+  .header2 .container .nav2 ul {
+    display: none;
+  }
+  .header2 .container li {
+    display: none;
+  }
+  .header3 {
+    display: block;
+    background-color: #c5c5c5;
+  }
+  .header3 .container .nav3 ul {
+    display: block;
+    line-height: 3;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .container .header3 .nav3 li {
+    display: block;
+  }
+  .header3 .container .nav3 li a {
+    text-align: center;
+    display: block;
+  }
+  .header3 ul li a:hover {
+    color: #9a9a9a;
+    background-color: #ffffff;
+  }
+  .header3 .nav3 {
+    width: 0;
+    height: fit-content;
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 1;
+    top: 121px;
+    left: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+    white-space: nowrap;
+    background-color: #6e6e6e;
+  }
+  /* 幅:200px */
+  .hmenu3.close + nav.nav3 {
     width: 200px;
   }
 }
