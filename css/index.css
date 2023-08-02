@@ -1,5 +1,94 @@
 @import url(common.css);
 
+/*==// スライダーと文字のwrap //==*/
+main > .slick {
+  position: relative;
+}
+/*==// 上に載せる文字部分 //==*/
+main > div .textbox {
+  position: absolute;
+  /*上下中央に文字配置*/
+  top: 40%;
+  transform: translateX(2%);
+  left: 5%;
+}
+main > div .textbox h2 {
+  width: 45%;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 35px;
+  background-color: #fff;
+  padding-left: 35px;
+  padding-top: 1%;
+}
+main > div .textbox p {
+  width: 45%;
+  color: #000;
+  background-color: #ffffff;
+  text-align: left;
+  left: 17.18%;
+  top: 38%;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 2px;
+  padding-bottom: 22px;
+}
+/*==// スライダーのコンテナ //==*/
+main .slider {
+  width: 100%; /* スライダーの幅を指定*/
+  list-style: none;
+}
+/*==// ここから矢印 //==*/
+.slide-arrow {
+  position: absolute;
+  /*上下中央に矢印配置*/
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 100;
+  cursor: pointer; /*ポインター表示にし、クリック可能なことを視覚的にわかりやすくします*/
+}
+.slide-arrow::before {
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+.next-arrow {
+  right: 10px;
+} /*内側に右から10ピクセル移動*/
+.prev-arrow {
+  left: 10px;
+} /*内側に左から10ピクセル移動*/
+.next-arrow::before {
+  content: "\f054"; /*右矢印のアイコンフォント*/
+}
+.prev-arrow::before {
+  content: "\f053"; /*左矢印アイコンフォント*/
+}
+/*マウスオーバーで矢印が水色へ*/
+.slide-arrow:hover::before {
+  color: #11cfff;
+}
+/*==// ここからdots //==*/
+.slick-dots {
+  /*画像の下部へ配置*/
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+.slick-dots li button:before {
+  color: #fff;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #11cfff;
+  opacity: 1;
+}
+
 /* ↓メインビジュアルの書式 */
 a.visual {
   position: relative;
