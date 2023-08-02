@@ -51,6 +51,11 @@ header h1 {
   color: #227e42;
 }
 
+/* 検索アイコン非表示 */
+.header2 .container p.search_icon {
+  display: none;
+}
+
 /* ↓ヘッダー2の書式 */
 .header2 {
   background-color: #9a9a9a;
@@ -224,6 +229,13 @@ footer .icon {
   .header2 .container p:last-child {
     display: none;
   }
+  .header2 .container p.search {
+    display: none;
+  }
+  .header2 .container p.search_icon {
+    display: block;
+    padding-right: 7px;
+  }
 }
 
 /* ヘッダー1 HBメニュー*/
@@ -266,12 +278,6 @@ footer .icon {
   /* 幅:200px */
   .hmenu.close + nav {
     width: 200px;
-  }
-  .header2 .container p img:first-child {
-    display: none;
-  }
-  .header2 .container p img:last-child {
-    display: block;
   }
 }
 
@@ -332,5 +338,8 @@ footer .icon {
   /* 幅:200px */
   .hmenu3.close + nav.nav3 {
     width: 200px;
+  }
+  .header2 .container p.search_icon {
+    display: block;
   }
 }
