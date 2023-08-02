@@ -51,11 +51,6 @@ header h1 {
   color: #227e42;
 }
 
-/* 検索アイコン非表示 */
-.header2 .container p.search_icon {
-  display: none;
-}
-
 /* ↓ヘッダー2の書式 */
 .header2 {
   background-color: #9a9a9a;
@@ -89,6 +84,12 @@ header h1 {
   color: #9a9a9a;
   background-color: #ffffff;
 }
+
+/* 検索アイコン非表示 */
+.header2 .container p.search_icon {
+  display: none;
+}
+
 .header3 {
   display: none;
 }
