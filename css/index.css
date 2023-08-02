@@ -17,7 +17,7 @@ main > div .textbox h2 {
   text-align: left;
   font-family: Poppins;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 34px;
   background-color: #fff;
   padding-left: 35px;
   padding-top: 1%;
@@ -801,6 +801,12 @@ main aside p {
     position: absolute;
     padding: 20px 27px 25px 27px;
   }
+  main > div .textbox h2 {
+    width: 50%;
+  }
+  main > div .textbox p {
+    width: 50%;
+  }
 }
 
 /* 1000px以下 */
@@ -840,6 +846,15 @@ main aside p {
     position: absolute;
     padding: 20px 27px 25px 27px;
   }
+  main > div .textbox {
+    top: 35%;
+  }
+  main > div .textbox h2 {
+    width: 60%;
+  }
+  main > div .textbox p {
+    width: 60%;
+  }
 }
 
 /* 900以下 */
@@ -878,6 +893,17 @@ main aside p {
   .food .food_main section {
     width: 42%;
     right: 1.13%;
+  }
+  main > div .textbox {
+    position: unset;
+  }
+  main > div .textbox h2 {
+    width: 80%;
+  }
+  main > div .textbox p {
+    width: 80%;
+    padding-top: 0;
+    padding-bottom: 12px;
   }
 }
 
@@ -946,6 +972,12 @@ main aside p {
   /* ランキング画像書式 */
   article section a .ranking_img {
     width: 70%;
+  }
+  main > div .textbox h2 {
+    width: 100%;
+  }
+  main > div .textbox p {
+    width: 100%;
   }
 }
 
