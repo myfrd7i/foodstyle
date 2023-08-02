@@ -245,7 +245,6 @@ footer .icon {
   header h1 {
     text-align: center;
   }
-
   .hmenu {
     display: flex;
   }
@@ -293,12 +292,14 @@ footer .icon {
     width: 100%;
   }
   .header2 .container {
-    display: none;
+    display: block;
   }
-  .header2 .container .nav2 ul {
-    display: none;
+  .header2 .container p.search_icon {
+    display: block;
+    text-align: right;
+    padding-top: 17px;
   }
-  .header2 .container li {
+  .header2 .container .nav2 {
     display: none;
   }
   .header3 {
@@ -311,7 +312,6 @@ footer .icon {
     color: #ffffff;
     font-weight: bold;
   }
-
   .container .header3 .nav3 li {
     display: block;
   }
@@ -339,8 +339,5 @@ footer .icon {
   /* 幅:200px */
   .hmenu3.close + nav.nav3 {
     width: 200px;
-  }
-  .header2 .container p.search_icon {
-    display: block;
   }
 }
