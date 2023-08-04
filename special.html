@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>FOODSTYLE</title>
+    <title>手軽にヘルシーなおもてなし料理のレシピならFOODSTYLE</title>
     <link rel="icon" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/special.css">
     <!-- ↓jQueryライブラリ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
@@ -33,7 +33,7 @@
                 <nav class="nav2">
                     <ul>
                         <li><a href="index.html" class="active">HOME</a></li>
-                        <li><a href="#">特集</a></li>
+                        <li><a href="special.html">特集</a></li>
                         <li><a href="#">レシピ</a></li>
                         <li><a href="#">コラム</a></li>
                         <li><a href="#">ニュース</a></li>
@@ -48,8 +48,8 @@
                 <button class="hmenu3"><span></span></button>
                 <nav class="nav3">
                     <ul>
-                        <li><a href="index.html" class="active">HOME</a></li>
-                        <li><a href="#">特集</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="special.html" class="active">特集</a></li>
                         <li><a href="#">レシピ</a></li>
                         <li><a href="#">コラム</a></li>
                         <li><a href="#">ニュース</a></li>
@@ -58,163 +58,108 @@
             </div>
         </div>
     </div>
-    <a class="visual" href="#">
-        <p><img class="pc" src="img/visual.png" alt="トップ料理画像">
-            <img class="tab" src="img/visual_tab.png" alt="トップ料理画像タブレット用">
-        </p>
-        <div class="visual_copy">
-            <section>
-                <h1>Dinner ideas</h1>
-                <p>おもてなし料理から普段の晩ごはんまで。</p>
-                <p>様々な方におすすめしたいディナーメニュー特集です。</p>
-                <p>オムレツやシチュー、カレーなど、時間がないときでも簡単に</p>
-                <p>作れるよう、シンプルに仕上げました。</p>
-            </section>
-        </div>
-    </a>
     <main>
-        <ul class="food">
-            <li class="food_1">
-                <div class="a">
-                    <a href="#">
-                        <img src="img/steak.png" alt="牛肉のステーキ">
-                        <p class="a_copy">牛肉のステーキ<span><img src="img/clock.svg" alt="時計">20分</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="b">
-                    <a href="#">
-                        <img src="img/gratan.png" alt="グラタン">
-                        <p class="b_copy">ナスとトマトのグラタン<span><img src="img/clock.svg" alt="時計">40分</span></p>
-                    </a>
-                </div>
-                <div class="c"><a href="#"><img src="img/pizza.png" alt="マルゲリータピザ">
-                        <p class="c_copy">マルゲリータピザ<span><img src="img/clock.svg" alt="時計">120分</span></p>
-                    </a></div>
-                <div class="d"><a href="#"><img src="img/aquapazza.png" alt="アクアパッツァ">
-                        <p class="d_copy">アクアパッツァ<span><img src="img/clock.svg" alt="時計">60分</span></p>
-                    </a></div>
-            </li>
-            <li class="food_2">
-                <div class="e">
-                    <a href="#">
-                        <img src="img/salada.png" alt="サラダ">
-                        <p class="e_copy">ビーツとレタスのサラダ
-                            <span>
-                                <img src="img/clock.svg" alt="時計">15分
-                            </span>
-                        </p>
-                    </a>
-                </div>
-                <div class="f"><a href="#"><img src="img/pasta1.png" alt="パスタ">
-                        <p class="f_copy">菜の花のパスタ<span><img src="img/clock.svg" alt="時計">20分</span></p>
-                    </a></div>
-                <div class="g"><a href="#"><img src="img/checken.png" alt="ローストチキン">
-                        <p class="g_copy">ローストチキン<span><img src="img/clock.svg" alt="時計">60分</span></p>
-                    </a></div>
-                <div class="h"><a href="#"><img src="img/potof.png" alt="ポトフ">
-                        <p class="h_copy">ポトフ<span><img src="img/clock.svg" alt="時計">45分</span></p>
-                    </a></div>
-            </li>
-            <li class="food_main">
-                <a href="#">
-                    <img class="pc" src="img/minestrone.png" alt="ミネストローネ">
-                    <img class="tab" src="img/mine_1200.png" alt="ミネストローネ1200px以下">
-                    <img class="sp" src="img/minestrone_sp.png" alt="ミネストローネsp用">
-                    <section class="food_mine">
-                        <h1>Pickup</h1>
-                        <h2>夏野菜のミネストローネ</h2>
-                        <p>本場イタリアのミネストローネは野菜をじっくり煮込んだ、素材の旨みたっぷりのレシピが基本なのだそう！旬の夏野菜のミネストローネレシピを紹介します。</p>
-                    </section>
-                </a>
-            </li>
-        </ul>
+        <div class="img_visual">
+            <img class="pc" src="img/ima_visual_pc.png" alt="サーモンのグリル">
+            <img class="tab" src="img/img_visual_tab.png" alt="サーモンのグリル">
+        </div>
+        <section class="textbox">
+            <h2>Dinner ideas</h2>
+            <p>ハーブとレモンの風味を効かせたサーモンのグリルレシピを紹介します。身近な材料で本格的なディナーメニューを試してみませんか？</p>
+        </section>
         <div class="container">
-            <div class="article">
-
-                <section class="maindish">
-                    <a href="#">
-                        <div class="maindish_text">
-                            <h1>Main dish</h1>
-                            <h2>肉汁ジュワーな煮込みハンバーグのレシピ。</h2>
-                            <p>レストランのような美味しさに格上げするには、いくつか秘訣があるんです！ そこで今回、シェフにプロならではの奥深い味を引き出す煮込みハンバーグのレシピ教えてもらいました。</p>
-                        </div>
-                        <div class="maindish_img">
-                            <img src="img/hamburger.png" alt="ハンバーグ">
-                        </div>
-                    </a>
-                </section>
-
-                <section class="sidedish">
-                    <a href="#">
-                        <div class="sidedish_text">
-                            <h1>Side dish</h1>
-                            <h2>温泉卵＆ポーチドエッグの簡単な作り方。</h2>
-                            <p>温泉卵とポーチドエッグの違いって、ご存じですか？ 実は似て非なる料理なんです。そこで今回、温泉卵とポーチドエッグの違いに加えて、それぞれ基本の作り方と簡単なアレンジレシピを詳しく解説してもらいました！</p>
-                        </div>
-                        <div class="sidedish_img">
-                            <img src="img/egg.png" alt="ポーチドエッグ">
-                        </div>
-                    </a>
-                </section>
-
-                <section class="dessert"><a href="#">
-                        <div class="dessert_text">
-                            <h1>Dessert</h1>
-                            <h2>プロのスイーツレシピで親子クッキング。</h2>
-                            <p>時間がある日は、親子で手作りスイーツを楽しみませんか？ 涼しげなデザートからボリューミーなものまで、簡単＆気軽に作れる手作りスイーツメニューを紹介します。</p>
-                        </div>
-                        <div class="dessert_img"><img src="img/pancake.png" alt="パンケーキ"></div>
-                    </a></section>
+            <section>
+                <h1>サーモンのハーブグリル</h1>
+                <p>フレッシュサーモンとハーブを使ったオーブングリル。トレイベークなので、<br>具材を用意したらあとは調理はオーブンにおまかせ！季節に応じて野菜を変えたり、お好みでフレンチビーンズ、<br>フェンネルのスライスやズッキーニを加えても。
+                </p>
+            </section>
+            <div class="flex">
+                <div class="recipes">
+                    <h2 class="content-title">【材料】 2人分</h2>
+                    <dl class="ingredient-list">
+                        <dt>サーモンフィレ</dt>
+                        <dd>2切れ</dd>
+                        <dt>オリーブオイル</dt>
+                        <dd>大さじ2～3</dd>
+                        <dt>トマト</dt>
+                        <dd>1/2カット</dd>
+                        <dt>じゃがいも</dt>
+                        <dd>3個</dd>
+                        <dt>ニンニクスライス</dt>
+                        <dd>1片</dd>
+                        <dt>レモンスライス</dt>
+                        <dd>3枚</dd>
+                        <dt>パセリ</dt>
+                        <dd>適量</dd>
+                        <dt>バジル</dt>
+                        <dd>2~3枚</dd>
+                        <dt>塩</dt>
+                        <dd>小さじ1/2</dd>
+                        <dt>コショウ</dt>
+                        <dd>適量</dd>
+                    </dl>
+                    <h2 class="content-title">作り方</h2>
+                    <ol class="step-list">
+                        <li>オーブンを 200Cに予熱します。</li>
+                        <li>サーモンフィレに塩コショウをまぶし、なじませます。</li>
+                        <li>付け合わせのジャガイモを食べやすい大きさにカットし、トマトを4つにカットします。</li>
+                        <li>カットしたジャガイモは耐熱容器に入れ、レンジで600W3分加熱します。</li>
+                        <li>オーブントレイにクッキングシートを敷き、サーモンと加熱したジャガイモを並べます。</li>
+                        <li>オリーブオイルを全体にまぶし、オーブンで20分間加熱します。</li>
+                        <li>加熱が終わったら取り出し、パセリ、バジル、トマト、レモンスライスを添えて皿に盛りつけます。（※オーブントレイは熱くなっていますので、やけどに注意してください。）</li>
+                    </ol>
+                </div>
+                <div class="resipes_img"><img class="img1" src="img/vage.png" alt="材料">
+                    <img class="img2" src="img/tlay.png" alt="材料">
+                </div>
             </div>
 
-
-            <div class="ranking">
-
-                <article>
+            <div class="container">
+                <div class="ranking">
                     <h1>Ranking<span>人気記事ランキング</span></h1>
-                    <section><a href="#">
-                            <div class="ranking_img">
-                                <p class="pc"><img src="img/ranking1.png" alt="ランキング1位"></p>
-                                <p class="tab">
-                                    <img src="img/ranking1_249px.png" alt="ランキング1位">
-                                </p>
-                            </div>
-                            <div class="ranking_text">
-                                <p>2023年母の日に贈るならこれ!プレミアム感のあるギフト7選!</p>
-                                <p>カテゴリ：ギフト</p>
-                            </div>
-                        </a></section>
-                    <section><a href="#">
-                            <div class="ranking_img">
-                                <p class="pc">
-                                    <img src="img/ranking2.png" alt="ランキング2位">
-                                </p>
-                                <p class="tab">
-                                    <img src="img/ranking2_249px.png" alt="ランキング2位">
-                                </p>
-
-                            </div>
-                            <div class="ranking_text">
-                                <p>ふるさと納税で季節の野菜をお取り寄せ！おすすめ商品を紹介します。</p>
-                                <p>カテゴリ：グルメ</p>
-                            </div>
-                        </a></section>
-                    <section><a href="#">
-                            <div class="ranking_img">
-                                <p class="pc">
-                                    <img src="img/ranking3.png" alt="ランキング3位">
-                                </p>
-                                <p class="tab">
-                                    <img src="img/ranking3_249px.png" alt="ランキング3位">
-                                </p>
-                            </div>
-                            <div class="ranking_text">
-                                <p>とろける卵のオープンサンドで朝食を楽しみませんか？</p>
-                                <p>カテゴリ：グルメ</p>
-                            </div>
-                        </a></section>
-                </article>
+                    <article>
+                        <section><a href="#">
+                                <div class="ranking_img">
+                                    <p class="pc"><img src="img/ranking1.png" alt="ランキング1位"></p>
+                                    <p class="tab">
+                                        <img src="img/ranking1_249px.png" alt="ランキング1位">
+                                    </p>
+                                </div>
+                                <div class="ranking_text">
+                                    <p>2023年母の日に贈るならこれ!プレミアム感のあるギフト7選!</p>
+                                    <p>カテゴリ：ギフト</p>
+                                </div>
+                            </a></section>
+                        <section><a href="#">
+                                <div class="ranking_img">
+                                    <p class="pc">
+                                        <img src="img/ranking2.png" alt="ランキング2位">
+                                    </p>
+                                    <p class="tab">
+                                        <img src="img/ranking2_249px.png" alt="ランキング2位">
+                                    </p>
+                                </div>
+                                <div class="ranking_text">
+                                    <p>ふるさと納税で季節の野菜をお取り寄せ！おすすめ商品を紹介します。</p>
+                                    <p>カテゴリ：グルメ</p>
+                                </div>
+                            </a></section>
+                        <section><a href="#">
+                                <div class="ranking_img">
+                                    <p class="pc">
+                                        <img src="img/ranking3.png" alt="ランキング3位">
+                                    </p>
+                                    <p class="tab">
+                                        <img src="img/ranking3_249px.png" alt="ランキング3位">
+                                    </p>
+                                </div>
+                                <div class="ranking_text">
+                                    <p>とろける卵のオープンサンドで朝食を楽しみませんか？</p>
+                                    <p>カテゴリ：グルメ</p>
+                                </div>
+                            </a></section>
+                    </article>
+                </div>
             </div>
         </div>
 
@@ -245,6 +190,20 @@
             <p><img src="img/snslogo.png" alt="SNSアイコン"></p>
         </div>
     </footer>
+    <script type="text/javascript">
+        $(function () {
+            $('.slider').slick({
+                autoplay: true,//自動再生する
+                autoplaySpeed: 4000,//自動再生するスピード 4秒
+                dots: true,//ドット部分を表示する
+                infinite: true,//無限にスライドする
+                fade: true,//フェードする
+                speed: 500,//フェードするスピード 0.5秒
+                prevArrow: '<p class="slide-arrow prev-arrow"></p>',//矢印左
+                nextArrow: '<p class="slide-arrow next-arrow"></p>'//矢印右
+            });
+        });
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
