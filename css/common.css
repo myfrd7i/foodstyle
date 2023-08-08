@@ -20,9 +20,14 @@ a {
   text-decoration: none;
 }
 
-a.active {
+/* アクティブ */
+.nav2 ul li a.active {
   color: #ffffff;
-  background-color: #252525;
+  background-color: #6b6b6b;
+}
+.nav3 ul li a.active {
+  color: #ffffff;
+  background-color: #6b6b6b;
 }
 
 /* コンテナの書式 */
