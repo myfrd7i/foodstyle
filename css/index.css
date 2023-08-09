@@ -186,23 +186,6 @@ main .food .food_1 div img {
 
 /* 料理画像ホバー */
 
-.food .food_1 {
-  position: relative;
-  transition: transform 0.3s ease;
-}
-.hover_a {
-  width: 47.7%;
-  height: 47.7%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  opacity: 0.5;
-  transition: background-color 0.3s ease;
-}
-.hover_a:hover {
-  background-color: black;
-}
 
 /* 料理画像キャプション */
 
