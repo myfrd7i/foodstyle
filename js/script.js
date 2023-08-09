@@ -23,3 +23,14 @@ $(".hmenu3").click(function () {
 $("body").click(function () {
   $(".hmenu3").removeClass("close");
 });
+
+// ページトップ表示
+$(window).scroll(function () {
+  var sc = $(window).scrollTop();
+  // console.log(sc);
+  if (sc > 100) {
+    $("footer p.pagetop").fadeIn(500);
+  } else {
+    $("footer p.pagetop").fadeOut(500);
+  }
+});

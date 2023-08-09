@@ -122,6 +122,18 @@ footer .icon {
   padding-bottom: 20px;
 }
 
+/*［ページトップ］固定配置、右:12px、下:9px */
+footer p.pagetop {
+  position: fixed;
+  right: 19px;
+  bottom: 9px;
+  display: none;
+}
+/* 不透明度:0.7 */
+footer p.pagetop a:hover {
+  opacity: 0.7;
+}
+
 /*-------------------------------
 ハンバーガーアイコン（header1）
 -------------------------------*/
@@ -339,7 +351,7 @@ footer .icon {
     height: fit-content;
     box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
     position: absolute;
-    z-index: 1;
+    z-index: 101;
     top: 121px;
     left: 0;
     transition: 0.5s;
