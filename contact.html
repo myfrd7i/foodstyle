@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>FOODSTYLE-お問い合わせ-</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- ↓jQueryライブラリ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="top">
+        <div class="header1">
+            <div class="container">
+                <header>
+                    <h1><a href="index.html"><img src="img/title-1.png" alt="フードスタイル"></a></h1>
+                </header>
+                <button class="hmenu"><span></span></button>
+                <nav class="nav1">
+                    <ul>
+                        <li><a href="#">FOODSTYLEとは</a></li>
+                        <li><a href="#">ガイド</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="container">
+                <nav class="nav2">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="special.html" class="active">特集</a></li>
+                        <li><a href="recipe.html">レシピ</a></li>
+                        <li><a href="#">コラム</a></li>
+                        <li><a href="#">ニュース</a></li>
+                    </ul>
+                </nav>
+                <p class="search"><img src="img/kensaku.png" alt="検索窓"></p>
+                <p class="search_icon"><img src="img/search_icon.png" alt="検索アイコン"></p>
+            </div>
+        </div>
+        <div class="header3">
+            <div class="container">
+                <button class="hmenu3"><span></span></button>
+                <nav class="nav3">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="special.html" class="active">特集</a></li>
+                        <li><a href="recipe.html">レシピ</a></li>
+                        <li><a href="#">コラム</a></li>
+                        <li><a href="#">ニュース</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="visual">
+            <div class="img_visual">
+                <img class="pc" src="img/ima_visual_pc.png" alt="サーモンのグリル">
+                <img class="tab" src="img/img_visual_tab.png" alt="サーモンのグリル">
+            </div>
+        </div>
+        <div class="container">
+            <article>
+                <h1>お問い合わせ</h1>
+                <p>FOODSTYLEについてのご質問・ご意見は、下記フォームよりお気軽にお問い合わせください。</p>
+                <aside>
+                    <ul>
+                        <li>必要事項を記入し、「送信」をクリックしてください。</li>
+                        <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+                        <li>※は必須項目です。</li>
+                    </ul>
+                </aside>
+            </article>
+            <form action="https://ssl.form-mailer.jp/fm/service/Forms/complete" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+                <input type="hidden" name="key" value="2a16ddf9794434">
+                <dl>
+                    <div class="name">
+                        <dt>お名前<span>※</span></dt>
+                        <dd>
+                            <div class="sei"><span>姓</span><input name="field_6926922_sei" type="text" required></div>
+                            <div class="mei"><span>名</span><input name="field_6926922_mei" type="text" required></div>
+                        </dd>
+                    </div>
+                    <div class="mail">
+                        <dt>メールアドレス<span>※</span></dt>
+                        <dd><input name="field_6926923" type="email" size="30" required></dd>
+                    </div>
+                    <div class="tel">
+                        <dt>電話番号<span>※</span></dt>
+                        <dd>
+                            <input name="field_6926927_1" type="text" maxlength="4" required><span>-</span>
+                            <input name="field_6926927_2" type="text" maxlength="4" required><span>-</span>
+                            <input name="field_6926927_3" type="text" maxlength="4" required>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>性別</dt>
+                        <dd>
+                            <label>
+                                <input name="field_6926924" type="radio" value="0">
+                                男性
+                            </label>
+                            <label>
+                                <input name="field_6926924" type="radio" value="1">
+                                女性
+                            </label>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>お問い合わせ内容<span>※</span></dt>
+                        <dd><textarea name="field_6926931" cols="30" rows="5" required></textarea></dd>
+                    </div>
+                </dl>
+                <p><button>送信</button></p>
+                <input type="hidden" name="code" value="utf8">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">
+            <small>&copy;2022 foodstyle.
+                <span>All Rights Reserved.</span>
+            </small>
+        </p>
+        <div class="icon">
+            <p><img src="img/snslogo.png" alt="SNSアイコン"></p>
+        </div>
+        <p class="pagetop"><a href="#top"><img src="img/pagetop.png" width="28" alt="ページトップへ"></a></p>
+    </footer>
+    <script type="text/javascript">
+        $(function () {
+            $('.slider').slick({
+                autoplay: true,//自動再生する
+                autoplaySpeed: 4000,//自動再生するスピード 4秒
+                dots: true,//ドット部分を表示する
+                infinite: true,//無限にスライドする
+                fade: true,//フェードする
+                speed: 500,//フェードするスピード 0.5秒
+                prevArrow: '<p class="slide-arrow prev-arrow"></p>',//矢印左
+                nextArrow: '<p class="slide-arrow next-arrow"></p>'//矢印右
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

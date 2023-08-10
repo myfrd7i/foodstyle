@@ -99,32 +99,6 @@ a.visual .tab {
   display: none;
 }
 
-/* ↓メインビジュアルコピーの書式 */
-.visual_copy {
-  width: 31%;
-  color: #000;
-  background-color: #ffffff;
-  text-align: left;
-  position: absolute;
-  left: 17.18%;
-  top: 38%;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 18px;
-  padding-bottom: 22px;
-}
-
-.visual_copy section h1 {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 35px;
-  padding-bottom: 6px;
-}
-
-.visual_copy section p {
-  font-size: 15px;
-}
-
 /* ↓料理写真の書式 */
 main .food {
   display: flex;

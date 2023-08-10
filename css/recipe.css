@@ -1,18 +1,21 @@
 @import url(common.css);
 
 /* ↓メインビジュアルの書式 */
-main .img_visual {
-  position: relative;
+main .visual .img_visual {
   display: block;
   margin-bottom: 60px;
 }
 /* タブレット用画像非表示 */
-main .img_visual .tab {
+main .visual .img_visual .tab {
   display: none;
 }
 
+main .visual {
+  position: relative;
+}
+
 /* ↓メインビジュアルコピーの書式 */
-main .textbox {
+main .visual .textbox {
   width: 31%;
   color: #000000;
   background-color: #ffffff;
@@ -26,21 +29,21 @@ main .textbox {
   padding-bottom: 22px;
 }
 
-main .textbox h1 {
+main .visual .textbox h1 {
   font-family: Poppins;
   font-size: 17px;
   font-weight: bold;
   padding-bottom: 3px;
 }
 
-main .textbox h2 {
+main .visual .textbox h2 {
   font-family: Poppins;
   font-weight: bold;
   font-size: 32px;
   padding-bottom: 5px;
 }
 
-main .textbox p {
+main .visual .textbox p {
   font-size: 17px;
   line-height: 1.7;
 }
@@ -48,11 +51,14 @@ main .textbox p {
 /* レシピの書式 */
 
 .container h1.new {
-  font-size: 27px;
+  font-size: 23px;
   font-weight: bold;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  border-bottom: 1px dotted #000;
+  border-left: 3px solid #000;
+  margin-bottom: 40px;
   text-align: left;
-  padding-bottom: 7px;
-  margin-bottom: 20px;
 }
 
 .container .recipe {
@@ -60,13 +66,14 @@ main .textbox p {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 43px;
   margin-bottom: 50px;
 }
 
 .recipe div {
   background-color: #e2e2e2;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .recipe div p {
@@ -121,7 +128,7 @@ div.f1 div.front {
 
 div.f1 div.rear1 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -170,7 +177,7 @@ div.f2 div.front2 {
 
 div.f2 div.rear2 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -219,7 +226,7 @@ div.f3 div.front3 {
 
 div.f3 div.rear3 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -266,7 +273,7 @@ div.f4 div.front4 {
 
 div.f4 div.rear4 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -312,7 +319,7 @@ div.f5 div.front5 {
 }
 div.f5 div.rear5 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -358,7 +365,7 @@ div.f6 div.front6 {
 }
 div.f6 div.rear6 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -404,7 +411,7 @@ div.f7 div.front7 {
 }
 div.f7 div.rear7 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -450,7 +457,7 @@ div.f8 div.front8 {
 }
 div.f8 div.rear8 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -495,7 +502,7 @@ div.f9 div.front9 {
 }
 div.f9 div.rear9 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -541,7 +548,7 @@ div.f10 div.front10 {
 }
 div.f10 div.rear10 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -587,7 +594,7 @@ div.f11 div.front11 {
 }
 div.f11 div.rear11 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -633,7 +640,7 @@ div.f12 div.front12 {
 }
 div.f12 div.rear12 {
   width: 332px;
-  height: 90%;
+  height: 94.5%;
   background-color: #9c9c9c;
   font-size: 20px;
   transform: rotateY(-180deg);
@@ -764,20 +771,19 @@ main aside p {
 /* 1600px以下 */
 @media (max-width: 1600px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 35%;
     left: 13%;
-    top: 33%;
+    top: 37%;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  main .textbox h2 {
-    font-size: 30px;
+  main .visual .textbox h2 {
     padding-bottom: 4px;
   }
-  main .textbox p {
+  main .visual .textbox p {
     font-size: 16px;
     line-height: 1.5;
   }
@@ -786,29 +792,17 @@ main aside p {
 /* 1400px以下 */
 @media (max-width: 1400px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 38%;
-    left: 11;
-    top: 28%;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  main .textbox h2 {
-    font-size: 30px;
-    padding-bottom: 4px;
-  }
-  main .textbox p {
-    font-size: 16px;
-    line-height: 1.5;
+    left: 10%;
+    top: 34%;
   }
 }
 
 /* 1200px以下 */
 @media (max-width: 1200px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 45%;
     left: 9%;
     top: 25%;
@@ -818,29 +812,28 @@ main aside p {
 /* 1000px以下 */
 @media (max-width: 1000px) {
   /* ↓メインビジュアルPC用非表示 */
-  main .img_visual .pc {
+  main .visual .img_visual .pc {
     display: none;
   }
   /* タブレット用画像表示 */
-  main .img_visual .tab {
-    position: relative;
+  main .visual .img_visual .tab {
     display: block;
     margin-bottom: 60px;
   }
-  main .textbox {
+  main .visual .textbox {
     width: 50%;
     left: 8%;
-    top: 30%;
+    top: 42%;
   }
 }
 
 /* 900以下 */
 @media (max-width: 900px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 62%;
     left: 7%;
-    top: 30%;
+    top: 40%;
   }
 }
 
@@ -855,14 +848,14 @@ main aside p {
     padding-right: 20px;
   }
   /* タブレット用画像表示 */
-  main .img_visual {
+  main .visual .img_visual {
     margin-bottom: 0px;
   }
-  main .img_visual .tab {
+  main .visual .img_visual .tab {
     margin-bottom: 0px;
   }
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     position: unset;
     width: 100%;
     color: #000000;
@@ -871,20 +864,20 @@ main aside p {
     padding: 25px 40px 25px 40px;
     margin-bottom: 30px;
   }
-  main .textbox h2 {
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 35px;
+  main .visual .textbox h2 {
+    font-size: 28px;
     padding-bottom: 5px;
   }
-  main .textbox p {
+  main .visual .textbox p {
     font-weight: 100;
-    font-size: 17px;
-    line-height: 1.7;
   }
   .flex .recipes {
     margin-right: 0;
     margin-bottom: 50px;
+  }
+  .container h1.new {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   /* レシピと材料写真の横並び */
   .flex {

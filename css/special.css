@@ -1,18 +1,21 @@
 @import url(common.css);
 
 /* ↓メインビジュアルの書式 */
-main .img_visual {
-  position: relative;
+main .visual .img_visual {
   display: block;
   margin-bottom: 60px;
 }
 /* タブレット用画像非表示 */
-main .img_visual .tab {
+main .visual .img_visual .tab {
   display: none;
 }
 
+main .visual {
+  position: relative;
+}
+
 /* ↓メインビジュアルコピーの書式 */
-main .textbox {
+main .visual .textbox {
   width: 31%;
   color: #000000;
   background-color: #ffffff;
@@ -25,14 +28,14 @@ main .textbox {
   padding-top: 25px;
   padding-bottom: 22px;
 }
-main .textbox h1 {
+main .visual .textbox h1 {
   font-family: Poppins;
   font-size: 17px;
   font-weight: bold;
   padding-bottom: 3px;
 }
 
-main .textbox h2 {
+main .visual .textbox h2 {
   font-family: Poppins;
   font-weight: bold;
   font-size: 30px;
@@ -83,6 +86,17 @@ main .textbox p {
   margin-bottom: 38px;
 }
 /* 2人分 */
+.recipes h1 {
+  font-size: 23px;
+  font-weight: bold;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  border-bottom: 1px dotted #000;
+  border-left: 3px solid #000;
+  margin-bottom: 38px;
+  text-align: left;
+}
+
 .flex .recipes h2 {
   font-size: 18px;
   font-weight: bold;
@@ -153,7 +167,7 @@ main .textbox p {
 }
 
 /* ランキング画像書式 */
-article section a .ranking_img {
+article section a .ranking_img .pc {
   width: 139px;
   padding-left: 2.5%;
   text-align: left;
@@ -161,6 +175,10 @@ article section a .ranking_img {
 
 /* ランキングtab用画像非表示 */
 article section a .ranking_img .tab {
+  display: none;
+}
+
+article section a .ranking_img .sp {
   display: none;
 }
 
@@ -234,20 +252,19 @@ main aside p {
 /* 1600px以下 */
 @media (max-width: 1600px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 35%;
     left: 13%;
-    top: 33%;
+    top: 37%;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  main .textbox h2 {
-    font-size: 30px;
+  main .visual .textbox h2 {
     padding-bottom: 4px;
   }
-  main .textbox p {
+  main .visual .textbox p {
     font-size: 16px;
     line-height: 1.5;
   }
@@ -256,29 +273,17 @@ main aside p {
 /* 1400px以下 */
 @media (max-width: 1400px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 38%;
-    left: 11;
-    top: 28%;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  main .textbox h2 {
-    font-size: 30px;
-    padding-bottom: 4px;
-  }
-  main .textbox p {
-    font-size: 16px;
-    line-height: 1.5;
+    left: 10%;
+    top: 34%;
   }
 }
 
 /* 1200px以下 */
 @media (max-width: 1200px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 45%;
     left: 9%;
     top: 25%;
@@ -288,30 +293,30 @@ main aside p {
 /* 1000px以下 */
 @media (max-width: 1000px) {
   /* ↓メインビジュアルPC用非表示 */
-  main .img_visual .pc {
+  main .visual .img_visual .pc {
     display: none;
   }
   /* タブレット用画像表示 */
-  main .img_visual .tab {
-    position: relative;
+  main .visual .img_visual .tab {
     display: block;
     margin-bottom: 60px;
   }
+
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 50%;
     left: 8%;
-    top: 30%;
+    top: 42%;
   }
 }
 
 /* 900以下 */
 @media (max-width: 900px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     width: 62%;
     left: 7%;
-    top: 30%;
+    top: 40%;
   }
 }
 
@@ -324,14 +329,14 @@ main aside p {
     padding-right: 5px;
   }
   /* タブレット用画像表示 */
-  main .img_visual {
+  main .visual .img_visual {
     margin-bottom: 0px;
   }
-  main .img_visual .tab {
+  main .visual .img_visual .tab {
     margin-bottom: 0px;
   }
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     position: unset;
     width: 100%;
     color: #000000;
@@ -339,16 +344,12 @@ main aside p {
     text-shadow: none;
     padding: 35px 25px 30px 25px;
   }
-  main .textbox h2 {
-    font-family: Poppins;
-    font-weight: bold;
+  main .visual .textbox h2 {
     font-size: 28px;
     padding-bottom: 5px;
   }
-  main .textbox p {
+  main .visual .textbox p {
     font-weight: 100;
-    font-size: 17px;
-    line-height: 1.7;
   }
   .flex .recipes {
     margin-right: 0;
@@ -388,6 +389,10 @@ main aside p {
   }
   .ranking article .ranking_img .tab {
     display: block;
+    padding-right: 5%;
+  }
+  article section a .ranking_img .sp {
+    display: none;
   }
   .ranking article section {
     margin-bottom: 0px;
@@ -399,7 +404,7 @@ main aside p {
   }
   /* ランキングテキストの書式 */
   article section a .ranking_text {
-    width: 55%;
+    width: 70%;
     font-size: 18px;
     text-align: left;
   }
@@ -433,7 +438,7 @@ main aside p {
 /*600以下 */
 @media (max-width: 600px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
     top: 30%;
     left: 0%;
   }
@@ -441,24 +446,51 @@ main aside p {
 /*575以下 */
 @media (max-width: 575px) {
   /* ↓メインビジュアルコピーの書式 */
-  main .textbox {
+  main .visual .textbox {
+    padding: 30px 25px 30px 25px;
+  }
+  /* ↓メインビジュアルコピーの書式 */
+  main .visual .textbox {
     top: 27%;
     left: 0%;
   }
   .flex .recipes {
-    padding-top: 280px;
+    padding-top: 74%;
   }
   .flex {
     position: relative;
     width: 100%;
   }
   .flex .resipes_img .img1 {
-    display: none;
-  }
-  .flex .resipes_img .img2 {
     position: absolute;
-    width: 98%;
+    width: 99%;
     top: 0px;
     left: 5px;
+  }
+  .flex .resipes_img .img2 {
+    display: none;
+  }
+}
+
+/* 400以下 */
+@media (max-width: 400px) {
+  .ranking h1 {
+    margin-bottom: 20px;
+  }
+  .ranking h1 span {
+    display: block;
+    padding-top: 7px;
+    padding-right: 30px;
+  }
+  /* ランキングtab用画像非表示 */
+  article section a .ranking_img .tab {
+    display: none !important;
+  }
+  /* ランキング画像書式 */
+  article section a .ranking_img .pc {
+    display: none;
+  }
+  article section a .ranking_img .sp {
+    display: block;
   }
 }
