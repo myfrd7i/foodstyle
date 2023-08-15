@@ -401,6 +401,7 @@ main aside p {
   .ranking article section a {
     display: flex;
     margin-bottom: 0;
+    column-gap: 3%;
   }
   /* ランキングテキストの書式 */
   article section a .ranking_text {
@@ -472,8 +473,8 @@ main aside p {
   }
 }
 
-/* 400以下 */
-@media (max-width: 400px) {
+/* 450以下 */
+@media (max-width: 450px) {
   .ranking h1 {
     margin-bottom: 20px;
   }

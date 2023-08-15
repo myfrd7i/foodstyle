@@ -38,6 +38,7 @@ main > div .textbox p {
 main .slider {
   width: 100%; /* スライダーの幅を指定*/
   list-style: none;
+  margin: 0;
 }
 /*==// ここから矢印 //==*/
 .slide-arrow {
@@ -88,17 +89,6 @@ main .slider {
   opacity: 1;
 }
 
-/* ↓メインビジュアルの書式 */
-a.visual {
-  position: relative;
-  display: block;
-}
-/* タブレット用画像非表示 */
-a.visual .tab {
-  position: relative;
-  display: none;
-}
-
 /* ↓料理写真の書式 */
 main .food {
   display: flex;
@@ -106,7 +96,7 @@ main .food {
   padding-top: 6px;
   padding-left: 12px;
   padding-right: 12px;
-  margin-bottom: 51px;
+  margin-bottom: 55px;
 }
 
 /* タブレット用料理写真非表示 */
@@ -159,7 +149,6 @@ main .food .food_1 div img {
 }
 
 /* 料理画像ホバー */
-
 
 /* 料理画像キャプション */
 
@@ -380,6 +369,23 @@ main .food .food_1 div img {
   padding-bottom: 3px;
 }
 
+div.ather {
+  position: relative;
+}
+
+div.ather a {
+  display: block;
+  position: absolute;
+  right: 1.19%;
+  bottom: 41px;
+  color: #15331f;
+}
+
+div.ather a:hover {
+  cursor: pointer;
+  color: #0e863c;
+}
+
 /* ミネストローネのキャプション */
 .food .food_main {
   position: relative;
@@ -436,6 +442,10 @@ main .container .article .maindish {
   text-align: left;
 }
 
+.maindish .maindish_img .sp {
+  display: none;
+}
+
 .maindish .maindish_img {
   width: 253px;
   padding-left: 4%;
@@ -474,6 +484,10 @@ main .container .article .sidedish {
 .sidedish .sidedish_text {
   width: 60%;
   text-align: left;
+}
+
+.sidedish .sidedish_img .sp {
+  display: none;
 }
 
 .sidedish .sidedish_img {
@@ -521,6 +535,10 @@ main .container .article .dessert {
   padding-left: 3%;
 }
 
+.dessert .dessert_img .sp {
+  display: none;
+}
+
 .dessert .dessert_text h1 {
   font-family: Poppins;
   font-size: 37px;
@@ -542,6 +560,15 @@ main .container .article .dessert {
 main .container .ranking {
   width: 100%;
   margin-bottom: 50px;
+}
+
+/* ランキングtab用画像非表示 */
+article section a .ranking_img .tab {
+  display: none;
+}
+
+article section a .ranking_img .sp {
+  display: none;
 }
 
 /* ランキング画像とテキストの横並び */
@@ -696,29 +723,13 @@ main aside p {
   main > div .textbox p {
     width: 50%;
   }
+  div.ather a {
+    bottom: 38px;
+  }
 }
 
 /* 1200px以下 */
 @media (max-width: 1200px) {
-  /* ↓メインビジュアルコピーの書式 */
-  .visual_copy {
-    width: 46%;
-    left: 7.18%;
-    top: 27%;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-  }
-  /* ビジュアルコピーh1のサイズ変更 */
-  .visual_copy section h1 {
-    font-size: 28px;
-    padding-bottom: 1px;
-  }
-  .visual_copy section p {
-    font-size: 13px;
-  }
-
   /* ランキングタイトルのセンター合わせ */
   .ranking article h1 {
     text-align: center;
@@ -737,7 +748,7 @@ main aside p {
     padding-top: 12px;
     padding-left: 12px;
     padding-right: 0px;
-    margin-bottom: 51px;
+    margin-bottom: 65px;
   }
 
   main ul li.food_1 {
@@ -795,33 +806,14 @@ main aside p {
   main > div .textbox p {
     width: 55%;
   }
+  div.ather a {
+    right: 1.5%;
+    bottom: 35px;
+  }
 }
 
 /* 1000px以下 */
 @media (max-width: 1000px) {
-  a.visual {
-    position: unset;
-  }
-  /* ↓メインビジュアルコピーの書式 */
-  .visual_copy {
-    width: 100%;
-    position: unset;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 16px;
-    padding-bottom: 14px;
-    background-color: #ffffff;
-  }
-  /* ビジュアルコピーh1のサイズ変更 */
-  .visual_copy section h1 {
-    font-size: 30px;
-    padding-bottom: 3px;
-  }
-  /* ビジュアルコピーを改行なし */
-  .visual_copy section p {
-    display: inline;
-    font-size: 15px;
-  }
   /* ビジュアルコピーの3行目のみディスプレイブロック（改行） */
   .visual_copy section p:nth-child(3) {
     display: block;
@@ -835,13 +827,16 @@ main aside p {
     padding: 20px 27px 25px 27px;
   }
   main > div .textbox {
-    top: 32%;
+    top: 47%;
   }
   main > div .textbox h2 {
     width: 60%;
   }
   main > div .textbox p {
     width: 60%;
+  }
+  div.ather a {
+    bottom: 26px;
   }
 }
 
@@ -892,6 +887,13 @@ main aside p {
     width: 80%;
     padding-top: 0;
     padding-bottom: 12px;
+  }
+  ul li.ather {
+    text-align: left;
+    padding-top: 20px;
+  }
+  div.ather a {
+    bottom: 30px;
   }
 }
 
@@ -967,6 +969,10 @@ main aside p {
   main > div .textbox p {
     width: 100%;
   }
+  div.ather a {
+    right: 2.6%;
+    bottom: 30px;
+  }
 }
 
 /*575以下 */
@@ -986,5 +992,189 @@ main aside p {
     width: 49%;
     height: 100%;
     right: 2.13%;
+  }
+  .container .article .maindish a {
+    display: block;
+    width: 100%;
+  }
+  main .container .article .maindish {
+    padding: 0px 20px 40px 20px;
+  }
+  .maindish .maindish_img .pc {
+    display: none;
+  }
+  .maindish .maindish_img .sp {
+    display: block;
+  }
+  .maindish .maindish_text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .maindish .maindish_img {
+    width: 100%;
+    padding-left: 0;
+  }
+  .container .article .sidedish a {
+    display: block;
+    width: 100%;
+  }
+  main .container .article .sidedish {
+    padding: 30px 20px 42px 20px;
+  }
+  .sidedish .sidedish_img .pc {
+    display: none;
+  }
+  .sidedish .sidedish_img .sp {
+    display: block;
+  }
+  .sidedish .sidedish_text {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .sidedish .sidedish_img {
+    width: 100%;
+    padding-left: 0;
+  }
+  .container .article .dessert a {
+    display: block;
+    width: 100%;
+  }
+  main .container .article .dessert {
+    padding: 30px 20px 42px 20px;
+  }
+  .dessert .dessert_img .pc {
+    display: none;
+  }
+  .dessert .dessert_img .sp {
+    display: block;
+  }
+  .dessert .dessert_text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .dessert .dessert_img {
+    width: 100%;
+    padding-left: 0;
+  }
+  .food .food_main section {
+    position: unset;
+    width: 97.8%;
+    margin-right: 2.19%;
+  }
+  .ranking h1 {
+    margin-bottom: 20px;
+  }
+  .ranking h1 span {
+    display: block;
+    padding-top: 7px;
+    padding-right: 30px;
+  }
+  /* ランキング画像書式 */
+  article section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  article section a .ranking_img .pc {
+    display: none;
+  }
+  article section a .ranking_img .tab {
+    display: none;
+  }
+  article section a .ranking_img .sp {
+    display: block;
+  }
+  .ranking article section a {
+    column-gap: 20px;
+    margin-bottom: 10%;
+  }
+  article section a .ranking_img {
+    width: 50%;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  article section a .ranking_text {
+    width: 100%;
+    padding-left: 0;
+  }
+  main > div .textbox h2 {
+    padding-top: 15px;
+  }
+  main .container .article .maindish {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+  }
+  main .container .article .sidedish {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  main .container .article .dessert {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .ranking article h1 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+/*450以下 */
+@media (max-width: 450px) {
+  /* ↓料理写真のflex設定1200以下 */
+  main .food {
+    display: block;
+    margin-right: 2.19%;
+  }
+
+  main ul li.food_1 {
+    display: block;
+    width: 100%;
+  }
+
+  main ul li.food_2 {
+    display: none;
+  }
+  .food .food_main img.sp {
+    padding-right: 0;
+  }
+  .food .food_main section {
+    width: 100%;
+    margin-right: 0;
+  }
+  .food_1 p.a_copy {
+    font-size: 17px;
+  }
+  .food a span {
+    display: block;
+    float: right;
+    font-size: 14px;
+  }
+  .food_1 .a img:last-child {
+    width: 28px;
+    padding-right: 10px;
+  }
+  .food_1 p.b_copy {
+    font-size: 16px;
+  }
+  .food_1 .b img:last-child {
+    width: 28px;
+    padding-right: 10px;
+  }
+  .food_1 p.c_copy {
+    font-size: 16px;
+  }
+  .food_1 .c img:last-child {
+    width: 28px;
+    padding-right: 10px;
+  }
+  .food_1 p.d_copy {
+    font-size: 16px;
+  }
+  .food_1 .d img:last-child {
+    width: 28px;
+    padding-right: 10px;
   }
 }

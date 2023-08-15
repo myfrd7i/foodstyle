@@ -932,7 +932,3 @@ main aside p {
     padding-right: 40px;
   }
 }
-
-/*575以下 */
-@media (max-width: 575px) {
-}
