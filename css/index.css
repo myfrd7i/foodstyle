@@ -680,6 +680,12 @@ main aside p {
     top: 50%;
     left: 9.9%;
   }
+  main > div .textbox h2 {
+    width: 45%;
+  }
+  main > div .textbox p {
+    width: 45%;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -699,13 +705,14 @@ main aside p {
     height: fit-content;
   }
   main > div .textbox {
-    top: 42%;
+    top: 47%;
+    left: 8.3%;
   }
   main > div .textbox h2 {
-    width: 50%;
+    width: 46%;
   }
   main > div .textbox p {
-    width: 50%;
+    width: 46%;
   }
   div.ather a {
     bottom: 38px;
@@ -715,8 +722,14 @@ main aside p {
 /* 1200px以下 */
 @media (max-width: 1200px) {
   main > div .textbox {
-    top: 38%;
-    left: 9%;
+    top: 43%;
+    left: 5.5%;
+  }
+  main > div .textbox h2 {
+    width: 50%;
+  }
+  main > div .textbox p {
+    width: 50%;
   }
   /* ランキングタイトルのセンター合わせ */
   .ranking article h1 {
@@ -785,15 +798,7 @@ main aside p {
     position: absolute;
     padding: 20px 27px 25px 27px;
   }
-  main > div .textbox {
-    top: 33%;
-  }
-  main > div .textbox h2 {
-    width: 55%;
-  }
-  main > div .textbox p {
-    width: 55%;
-  }
+
   div.ather a {
     right: 1.5%;
     bottom: 35px;
@@ -802,10 +807,6 @@ main aside p {
 
 /* 1000px以下 */
 @media (max-width: 1000px) {
-  /* ビジュアルコピーの3行目のみディスプレイブロック（改行） */
-  .visual_copy section p:nth-child(3) {
-    display: block;
-  }
   /* ミネストローネコピー */
   .food .food_main section {
     width: 38%;
@@ -867,6 +868,8 @@ main aside p {
   }
   main > div .textbox {
     position: unset;
+    margin-top: 3px;
+    margin-bottom: 10px;
   }
   main > div .textbox h2 {
     width: 80%;
@@ -887,15 +890,6 @@ main aside p {
 
 /* 767以下 */
 @media (max-width: 767px) {
-  /* PC用メインビジュアル非表示 */
-  a.visual .pc {
-    display: none;
-  }
-  /* タブレット用画像非表示 */
-  a.visual .tab {
-    position: relative;
-    display: block;
-  }
   /* タブレット用ミネストローネ写真非表示 */
   .food .food_main img.tab {
     display: none;
